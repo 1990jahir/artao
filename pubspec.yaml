@@ -1,0 +1,35 @@
+name: artao
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.6
+  flutter_screenutil: 5.8.4
+  google_fonts: ^5.1.0
+  flutter_svg:
+  connectivity_plus: ^4.0.1
+  shared_preferences: 2.2.0
+  firebase_messaging: 14.6.5
+  flutter_local_notifications:
+  firebase_core: ^2.15.1
+  firebase_auth: ^4.9.0
+  google_sign_in: ^6.1.5
+
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/icons/
+    - .env
+  uses-material-design: true
+
