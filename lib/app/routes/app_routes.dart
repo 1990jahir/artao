@@ -16,6 +16,12 @@ abstract class Routes {
   static const NOTIFICATION = _Paths.NOTIFICATION;
   static const SPLASH_PAGE = _Paths.SPLASH_PAGE;
   static const NAVIGATION_BAR = _Paths.NAVIGATION_BAR;
+  static const CART_PAGE = _Paths.MAIN_MODULE + _Paths.CART_PAGE;
+  static const CART_PAGE = _Paths.MAIN_MODULE + _Paths.CART_PAGE;
+  static const VIEW_CART = _Paths.VIEW_CART;
+  static const CART = _Paths.MAIN_MODULE + _Paths.CART;
+  static const ABC = _Paths.MISC + _Paths.ABC;
+  static const USER_CART = _Paths.MAIN_MODULE + _Paths.USER_CART;
 }
 
 abstract class _Paths {
@@ -33,4 +39,10 @@ abstract class _Paths {
   static const NOTIFICATION = '/notification';
   static const SPLASH_PAGE = '/splash-page';
   static const NAVIGATION_BAR = '/navigation-bar';
+  static const CART_PAGE = '/cart-page';
+  static const CART_PAGE = '/cart-page';
+  static const VIEW_CART = '/view-cart';
+  static const CART = '/cart';
+  static const ABC = '/abc';
+  static const USER_CART = '/user-cart';
 }

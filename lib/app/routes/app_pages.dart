@@ -12,6 +12,12 @@ import '../modules/auth/splash_page/bindings/splash_page_binding.dart';
 import '../modules/auth/splash_page/views/splash_page_view.dart';
 import '../modules/auth/verify_otp/bindings/verify_otp_binding.dart';
 import '../modules/auth/verify_otp/views/verify_otp_view.dart';
+import '../modules/main_module/cart/bindings/cart_binding.dart';
+import '../modules/main_module/cart/views/cart_view.dart';
+import '../modules/main_module/cart_page/bindings/cart_page_binding.dart';
+import '../modules/main_module/cart_page/bindings/cart_page_binding.dart';
+import '../modules/main_module/cart_page/views/cart_page_view.dart';
+import '../modules/main_module/cart_page/views/cart_page_view.dart';
 import '../modules/main_module/favourite/bindings/favourite_binding.dart';
 import '../modules/main_module/favourite/views/favourite_view.dart';
 import '../modules/main_module/home/bindings/home_binding.dart';
@@ -24,8 +30,14 @@ import '../modules/main_module/search_page/bindings/search_page_binding.dart';
 import '../modules/main_module/search_page/views/search_page_view.dart';
 import '../modules/main_module/upcoming/bindings/upcoming_binding.dart';
 import '../modules/main_module/upcoming/views/upcoming_view.dart';
+import '../modules/main_module/user_cart/bindings/user_cart_binding.dart';
+import '../modules/main_module/user_cart/views/user_cart_view.dart';
+import '../modules/misc/abc/bindings/abc_binding.dart';
+import '../modules/misc/abc/views/abc_view.dart';
 import '../modules/misc/notification/bindings/notification_binding.dart';
 import '../modules/misc/notification/views/notification_view.dart';
+import '../modules/viewCart/bindings/view_cart_binding.dart';
+import '../modules/viewCart/views/view_cart_view.dart';
 
 part 'app_routes.dart';
 
@@ -99,6 +111,38 @@ class AppPages {
       name: _Paths.NAVIGATION_BAR,
       page: () => const NavigationBarView(),
       binding: NavigationBarBinding(),
+    ),
+    GetPage(
+      name: _Paths.CART_PAGE,
+      page: () => const CartPageView(),
+      binding: CartPageBinding(),
+      children: [
+        GetPage(
+          name: _Paths.CART_PAGE,
+          page: () => const CartPageView(),
+          binding: CartPageBinding(),
+        ),
+      ],
+    ),
+    GetPage(
+      name: _Paths.VIEW_CART,
+      page: () => const ViewCartView(),
+      binding: ViewCartBinding(),
+    ),
+    GetPage(
+      name: _Paths.CART,
+      page: () => const CartView(),
+      binding: CartBinding(),
+    ),
+    GetPage(
+      name: _Paths.ABC,
+      page: () => const AbcView(),
+      binding: AbcBinding(),
+    ),
+    GetPage(
+      name: _Paths.USER_CART,
+      page: () => const UserCartView(),
+      binding: UserCartBinding(),
     ),
   ];
 }
