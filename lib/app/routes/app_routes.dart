@@ -22,6 +22,7 @@ abstract class Routes {
   static const CART = _Paths.MAIN_MODULE + _Paths.CART;
   static const ABC = _Paths.MISC + _Paths.ABC;
   static const USER_CART = _Paths.MAIN_MODULE + _Paths.USER_CART;
+  static const SUPPORT = _Paths.MISC + _Paths.SUPPORT;
 }
 
 abstract class _Paths {
@@ -45,4 +46,5 @@ abstract class _Paths {
   static const CART = '/cart';
   static const ABC = '/abc';
   static const USER_CART = '/user-cart';
+  static const SUPPORT = '/support';
 }

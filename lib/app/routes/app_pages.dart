@@ -36,6 +36,8 @@ import '../modules/misc/abc/bindings/abc_binding.dart';
 import '../modules/misc/abc/views/abc_view.dart';
 import '../modules/misc/notification/bindings/notification_binding.dart';
 import '../modules/misc/notification/views/notification_view.dart';
+import '../modules/misc/support/bindings/support_binding.dart';
+import '../modules/misc/support/views/support_view.dart';
 import '../modules/viewCart/bindings/view_cart_binding.dart';
 import '../modules/viewCart/views/view_cart_view.dart';
 
@@ -143,6 +145,11 @@ class AppPages {
       name: _Paths.USER_CART,
       page: () => const UserCartView(),
       binding: UserCartBinding(),
+    ),
+    GetPage(
+      name: _Paths.SUPPORT,
+      page: () => const SupportView(),
+      binding: SupportBinding(),
     ),
   ];
 }
